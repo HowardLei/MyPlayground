@@ -4,13 +4,13 @@
 @implementation Shop
 //欢迎语
 - (void)welcome{
-    NSLog(@"小卖部欢迎你");
-    NSLog(@"本商店现有饼干，面包，饮料供您选择");
-    NSLog(@"请输入您所需要的商品");
+    NSLog(@"Welcome to shop");
+    NSLog(@"We have biscuit,bread and drinks");
+    NSLog(@"Which would you want?");
     char c[1];//创建一个字符串，用于存储用户的选择
     scanf("%s",c);//输入你要的产品
     NSString * choice = [NSString stringWithUTF8String:c];//对C语言字符串进行转换，转为OC字符串
-    NSLog(@"请输入您所需要的数量");
+    NSLog(@"How much would you want?");
     int number;
     scanf("%d",&number);//输入数量
     //取商品

@@ -2,9 +2,9 @@
 #import "Shelf.h"
 @implementation Shelf
 //创建商品
-NSString * biscuitName = @"饼干";
-NSString * breadName = @"面包";
-NSString * drinkName = @"饮料";
+NSString * biscuitName = @"biscuit";
+NSString * breadName = @"bread";
+NSString * drinkName = @"drinks";
 //加入商品
 - (void)addGoodsWithName:(NSString *)name andNumber:(int)number{
     if ([name isEqualToString:biscuitName]){
