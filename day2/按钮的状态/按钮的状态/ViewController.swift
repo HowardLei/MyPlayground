@@ -1,25 +1,17 @@
-//
-//  ViewController.swift
-//  按钮的状态
-//
-//  Created by jyz on 2017/12/10.
-//  Copyright © 2017年 jyz. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        demo1()
+        demo2()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   func demo1(x: String) -> (String){
+       return x
     }
-
-
+    func demo2(){
+       let a = demo1
+       print(a("怎么样，我现在就调用你"))
+    }
 }
-
