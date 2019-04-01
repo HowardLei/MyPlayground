@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     func demo2(){
         let oName: String? = "老王"
         let oAge: Int? = 10
-        if let name = oName,let age = oAge//出现时就是判断对象是否为nil。
+        if let name = oName, let age = oAge //出现时就是判断对象是否为nil。
         {
             print(name + String(age))
             //进入这个分支以后，name和age一定有值，不需要解包
@@ -59,13 +59,12 @@ class ViewController: UIViewController {
         print(name + String(age))
     }
 	func demo4(name: String?, age: Int?){
-	guard let name = name, let age = age else
+        guard let name = name, let age = age else {
     /*
          guard let& if let 的技巧
          使用同名的变量接受值，在后续使用的都是非空值，不需要解包
          同时也能避免起名字的烦恼
          */
-    {
             print("name或者age为nil")
             return
         }

@@ -4,11 +4,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        demo1()
         demo2()
         demo3()
     }
-   func demo1(x: String) -> (String){
+   func demo1(_ x: String) -> String{
        return x
     }
     func demo2(){

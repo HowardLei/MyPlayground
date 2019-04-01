@@ -13,12 +13,13 @@ class ViewController: UIViewController,UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
         cell.textLabel?.text = "hello ~~~ \(indexPath.row)"
         return cell
+        String
     }
     func setupUI() {
         //1、创建表格
-        let tv = UITableView(frame: view.bounds, style: .plain)
+        let tv = UITableView(frame: view.bounds, style: UITableView.Style.plain)
         //2.添加进视图
-        view.addSubview(tv)
+        self.view.addSubview(tv)
         //3、注册可重用cell
         tv.register(UITableView.self, forCellReuseIdentifier: "cellId")
         //4、设置数据源
