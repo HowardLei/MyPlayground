@@ -20,21 +20,19 @@ class ViewController: UIViewController {
     }
     //MARK:if let句式
     func demo2(){
-        let oName: String? = "老王"
-        let oAge: Int? = 10
+        let oName:Optional = "老王"
+        let oAge:Int? = 10
         if let name = oName, let age = oAge //出现时就是判断对象是否为nil。
         {
             print(name + String(age))
             //进入这个分支以后，name和age一定有值，不需要解包
             //name和age的作用域仅在{}中
-        }else {
+        } else {
             print("name 或者 age为nil")
         }
         if var name1 = oName,let age1 = oAge {
             name1 = "小张"
             print(name1 + String(age1))
-        } else {
-            ()
         }
         /*
          关于if let与if var的区别
@@ -48,6 +46,7 @@ class ViewController: UIViewController {
      guard let一定有值，如果没有没有直接返回，所以在写的时候不要忘了{}最后写return
      就是先写else，else后面的区域相当于if let{}的区域
      guard用于降低分支层次的办法
+     一般是用于判断代码的逻辑业务是否成功
      */
     func demo3(){
         let oName: String? = "老王"

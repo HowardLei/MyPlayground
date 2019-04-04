@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         }
         //3.enum block遍历
         print("用enum block遍历")
-        for e in array1.enumerated() {
+        array1.forEach { (e) in
             print(e)
         }
         //4.enum 遍历
