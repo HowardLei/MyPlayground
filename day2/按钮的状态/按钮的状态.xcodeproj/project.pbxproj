@@ -13,6 +13,12 @@
 		63B1FF822252673400FB382F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B1FF812252673400FB382F /* Assets.xcassets */; };
 		63B1FF852252673400FB382F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B1FF832252673400FB382F /* LaunchScreen.storyboard */; };
 		63B1FF8B2252674600FB382F /* ITView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1FF8A2252674600FB382F /* ITView.swift */; };
+		63D30EA32275A60D00DCE9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D30EA22275A60D00DCE9C4 /* AppDelegate.swift */; };
+		63D30EA52275A60D00DCE9C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D30EA42275A60D00DCE9C4 /* ViewController.swift */; };
+		63D30EA82275A60D00DCE9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D30EA62275A60D00DCE9C4 /* Main.storyboard */; };
+		63D30EAA2275A60E00DCE9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D30EA92275A60E00DCE9C4 /* Assets.xcassets */; };
+		63D30EAD2275A60E00DCE9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D30EAB2275A60E00DCE9C4 /* LaunchScreen.storyboard */; };
+		63D30EB32275A62500DCE9C4 /* ITAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D30EB22275A62500DCE9C4 /* ITAccount.swift */; };
 		6E6239171FDD35C5008834EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6239161FDD35C5008834EC /* AppDelegate.swift */; };
 		6E6239191FDD35C5008834EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6239181FDD35C5008834EC /* ViewController.swift */; };
 		6E62391C1FDD35C5008834EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E62391A1FDD35C5008834EC /* Main.storyboard */; };
@@ -29,6 +35,14 @@
 		63B1FF842252673400FB382F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B1FF862252673400FB382F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B1FF8A2252674600FB382F /* ITView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITView.swift; sourceTree = "<group>"; };
+		63D30EA02275A60D00DCE9C4 /* 取钱.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "取钱.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D30EA22275A60D00DCE9C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63D30EA42275A60D00DCE9C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63D30EA72275A60D00DCE9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63D30EA92275A60E00DCE9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63D30EAC2275A60E00DCE9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63D30EAE2275A60E00DCE9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D30EB22275A62500DCE9C4 /* ITAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITAccount.swift; sourceTree = "<group>"; };
 		6E6239131FDD35C5008834EC /* 按钮的状态.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "按钮的状态.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6239161FDD35C5008834EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E6239181FDD35C5008834EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +54,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		63B1FF752252673300FB382F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D30E9D2275A60C00DCE9C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -70,11 +91,26 @@
 			path = demo;
 			sourceTree = "<group>";
 		};
+		63D30EA12275A60D00DCE9C4 /* 取钱 */ = {
+			isa = PBXGroup;
+			children = (
+				63D30EA22275A60D00DCE9C4 /* AppDelegate.swift */,
+				63D30EA42275A60D00DCE9C4 /* ViewController.swift */,
+				63D30EA62275A60D00DCE9C4 /* Main.storyboard */,
+				63D30EA92275A60E00DCE9C4 /* Assets.xcassets */,
+				63D30EAB2275A60E00DCE9C4 /* LaunchScreen.storyboard */,
+				63D30EAE2275A60E00DCE9C4 /* Info.plist */,
+				63D30EB22275A62500DCE9C4 /* ITAccount.swift */,
+			);
+			path = "取钱";
+			sourceTree = "<group>";
+		};
 		6E62390A1FDD35C5008834EC = {
 			isa = PBXGroup;
 			children = (
 				6E6239151FDD35C5008834EC /* 按钮的状态 */,
 				63B1FF792252673400FB382F /* demo */,
+				63D30EA12275A60D00DCE9C4 /* 取钱 */,
 				6E6239141FDD35C5008834EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +120,7 @@
 			children = (
 				6E6239131FDD35C5008834EC /* 按钮的状态.app */,
 				63B1FF782252673300FB382F /* demo.app */,
+				63D30EA02275A60D00DCE9C4 /* 取钱.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +158,23 @@
 			productReference = 63B1FF782252673300FB382F /* demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		63D30E9F2275A60C00DCE9C4 /* 取钱 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63D30EB12275A60E00DCE9C4 /* Build configuration list for PBXNativeTarget "取钱" */;
+			buildPhases = (
+				63D30E9C2275A60C00DCE9C4 /* Sources */,
+				63D30E9D2275A60C00DCE9C4 /* Frameworks */,
+				63D30E9E2275A60C00DCE9C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "取钱";
+			productName = "取钱";
+			productReference = 63D30EA02275A60D00DCE9C4 /* 取钱.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6E6239121FDD35C5008834EC /* 按钮的状态 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E6239251FDD35C5008834EC /* Build configuration list for PBXNativeTarget "按钮的状态" */;
@@ -151,6 +205,9 @@
 					63B1FF772252673300FB382F = {
 						CreatedOnToolsVersion = 10.2;
 					};
+					63D30E9F2275A60C00DCE9C4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					6E6239121FDD35C5008834EC = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1020;
@@ -173,6 +230,7 @@
 			targets = (
 				6E6239121FDD35C5008834EC /* 按钮的状态 */,
 				63B1FF772252673300FB382F /* demo */,
+				63D30E9F2275A60C00DCE9C4 /* 取钱 */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +243,16 @@
 				63B1FF852252673400FB382F /* LaunchScreen.storyboard in Resources */,
 				63B1FF822252673400FB382F /* Assets.xcassets in Resources */,
 				63B1FF802252673400FB382F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D30E9E2275A60C00DCE9C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D30EAD2275A60E00DCE9C4 /* LaunchScreen.storyboard in Resources */,
+				63D30EAA2275A60E00DCE9C4 /* Assets.xcassets in Resources */,
+				63D30EA82275A60D00DCE9C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +276,16 @@
 				63B1FF7D2252673400FB382F /* ViewController.swift in Sources */,
 				63B1FF7B2252673400FB382F /* AppDelegate.swift in Sources */,
 				63B1FF8B2252674600FB382F /* ITView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63D30E9C2275A60C00DCE9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D30EA52275A60D00DCE9C4 /* ViewController.swift in Sources */,
+				63D30EB32275A62500DCE9C4 /* ITAccount.swift in Sources */,
+				63D30EA32275A60D00DCE9C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +313,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				63B1FF842252673400FB382F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63D30EA62275A60D00DCE9C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63D30EA72275A60D00DCE9C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63D30EAB2275A60E00DCE9C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63D30EAC2275A60E00DCE9C4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -299,6 +393,49 @@
 				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Anonymous.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63D30EAF2275A60E00DCE9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				INFOPLIST_FILE = "取钱/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anonymous.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63D30EB02275A60E00DCE9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				INFOPLIST_FILE = "取钱/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anonymous.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,6 +596,15 @@
 			buildConfigurations = (
 				63B1FF882252673400FB382F /* Debug */,
 				63B1FF892252673400FB382F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63D30EB12275A60E00DCE9C4 /* Build configuration list for PBXNativeTarget "取钱" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D30EAF2275A60E00DCE9C4 /* Debug */,
+				63D30EB02275A60E00DCE9C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
