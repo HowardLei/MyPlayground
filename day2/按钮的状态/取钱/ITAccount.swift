@@ -17,6 +17,7 @@ class ITAccount: NSObject {
         self.accountNO = accountNO
         self.balance = balance
         self.condition = NSCondition()
+        super.init()
     }
     func draw(drawAmount:Double) {
         condition.lock()

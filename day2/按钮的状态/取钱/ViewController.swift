@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
     @objc func deposit(moneyAmount:NSNumber) {
         for _ in 0...100 {
-        account.deposit(drawAmount: moneyAmount.doubleValue)
+            account.deposit(drawAmount: moneyAmount.doubleValue)
         }
     }
 }
