@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         view.addSubview(button)
     }
     @objc func drawMoney(sender:UIButton) {
-        let thread1 = Thread(target: self, selector: #selector(draw(moneyAmount:)), object: NSNumber(value: 800))
+        let thread1 = Thread(target: self, selector: #selector(draw(moneyAmount:)), object: 800)
         thread1.name = "中国银行"
-        let thread2 = Thread(target: self, selector: #selector(deposit(moneyAmount:)), object: NSNumber(value: 800))
-        thread2.name = "中国工商银行"
+        let thread2 = Thread(target: self, selector: #selector(deposit(moneyAmount:)), object: 800)
+        thread2.name = thread1.name
         thread1.start()
         thread2.start()
     }
