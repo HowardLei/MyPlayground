@@ -10,13 +10,11 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     let cellID = "cellID"
-    
     @IBOutlet weak var myView: ITView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 30
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
         if cell == nil {
@@ -25,17 +23,22 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell?.textLabel?.text = "wangnima"
         return cell!
     }
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         let tableView = UITableView(frame: self.view.bounds, style: .plain)
         view.addSubview(tableView)
         tableView.dataSource = self
     }
-
     @IBAction func sliderChange(_ sender: UISlider) {
          myView.progress = CGFloat(sender.value)
     }
+    func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+        var values = [Int]()
+        for elem in nums1 {
+            if nums2.contains(elem) && values.count < min(nums1.count, nums2.count){
+                values.append(elem)
+            }
+        }
+        return values
+    }
 }
-
