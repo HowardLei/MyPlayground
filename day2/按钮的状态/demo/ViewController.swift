@@ -85,4 +85,15 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
         return res
     }
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var dict = [Int: Int]()
+        for (index, element) in nums.enumerated() {
+            let next = target - element
+            guard dict[next] == nil else {
+                return [dict[next]!, index]
+            }
+            dict[element] = index
+        }
+        return []
+    }
 }
