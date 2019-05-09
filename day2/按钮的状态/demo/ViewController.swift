@@ -43,17 +43,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     func containsDuplicate(_ nums: [Int]) -> Bool {
         return nums.count != Set<Int>(nums).count
-//        if nums.count <= 1 {
-//            return false
-//        }
-//        var values = Set<Int>(arrayLiteral: nums[0])
-//        for i in 1..<nums.count {
-//            guard !values.contains(nums[i]) else {
-//                return true
-//            }
-//            values.insert(nums[i])
-//        }
-//        return false
     }
     func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
         var dict1 = [Int: Int]()
